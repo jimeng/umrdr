@@ -12,6 +12,7 @@ Sufia.config do |config|
   # TODO move to resource types service and QA after sufia 7.0
   config.resource_types_to_schema = {"Dataset" => "http://schema.org/Dataset"}
 
+  config.minter_statefile = ENV['MINTER_FILE'] || "/tmp/umrdr-minter-#{Time.now.min}#{Time.now.sec}"
 
   config.permission_levels = {
     "Choose Access" => "none",

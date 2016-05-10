@@ -4,8 +4,6 @@ CurationConcerns.configure do |config|
 
   config.max_days_between_audits = 7
 
-  config.minter_statefile = ENV['MINTER_FILE'] || "/tmp/umrdr-minter-#{Time.now.min}#{Time.now.sec}"
-
   config.display_microdata = true
   config.microdata_default_type = 'http://schema.org/CreativeWork'
 
