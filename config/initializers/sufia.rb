@@ -95,6 +95,9 @@ Sufia.config do |config|
   rescue Errno::ENOENT
     config.browse_everything = nil
   end
+  # Force browse_everything to be disabled until the interface is satisfactory
+  #  This way, the config can stay in place, but BE won't be used.
+  config.browse_everything = nil
 end
 
 Date::DATE_FORMATS[:standard] = '%Y-%m-%d'
