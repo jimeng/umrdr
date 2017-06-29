@@ -115,9 +115,7 @@ class Hyrax::GenericWorksController < ApplicationController
     end
     send_file zipfile_name
   end
-
-
-
+  
   # Create EDTF::Interval from form parameters
   # Replace the date coverage parameter prior with serialization of EDTF::Interval
   def assign_date_coverage
